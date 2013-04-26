@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/turnThrowInfoTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/youThrew"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/throwTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/throwValueSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/turnThrowInfoTV"
+        android:gravity="center"
+        android:text="@string/numbers"
+        android:textSize="250sp" />
+
+    <LinearLayout
+        android:id="@+id/sendValueLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/throwSendBtn"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" >
+
+        <TextView
+            android:id="@+id/selectValueTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/select_value"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/throwValueSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4433B5E5"
+            android:entries="@array/throw_values"
+            android:prompt="@string/select_value" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/throwSendBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="#92CD00"
+        android:onClick="sendValueBtnClicked"
+        android:text="@string/sendThrowValue"
+        android:textSize="25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BakalarkaDroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="join_server">Join to server</string>
+    <string name="create_server">Create new server</string>
+    <string name="looking_for_available_servers">Looking for available servers&#8230;</string>
+    <string name="no_invitation_received">No invitation received.</string>
+    <string name="received_invitation">Received invitation from</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="accepting_inv">Accepting invitation&#8230;</string>
+    <string name="error_accepting_inv">Acceptation failed</string>
+    <string name="inv_acc_error_message">Acceptation was unsuccessful. Please try again.</string>
+    <string name="enter_ip">Enter IP address</string>
+    <string name="enter_ip_hint">10.0.2.2</string>
+    <string name="send_invitations">Send invitations</string>
+    <string name="cancel_invitation">Cancel</string>
+    <string name="sending_invitation">Sending invitation&#8230;</string>
+    <string name="invitation_failed">Invitation failed</string>
+    <string name="add_invitation">Add to list</string>
+    <string name="clear_list">Clear</string>
+    <string name="numbers">/?</string>
+    <string name="trust">I trust him</string>
+    <string name="dont_trust">No, he lied to me</string>
+    <string name="playerThrew">Player ? threw</string>
+    <string name="playerIsOnTurn">Player ? is on turn</string>
+    <string name="sendThrowValue">Send value</string>
+    <string name="youThrew">You threw</string>
+
+    <string-array name="throw_values">
+        <item>11</item>
+        <item>21</item>
+        <item>22</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+    </string-array>
+
+    <string name="select_value">Select value:</string>
+    <string name="waitingFor">Waiting for player</string>
+    <string name="winner">Great, you won that game.</string>
+    <string name="looser">Oh no, you loose.</string>
+    <string name="newGame">New game</string>
+
+</resources>

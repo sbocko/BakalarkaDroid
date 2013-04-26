@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/enterIpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/enter_ip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/ipAddressET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterIpTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_ip_hint"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addInvitationBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ipAddressET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#CC33B5E5"
+        android:onClick="addBtnClicked"
+        android:text="@string/add_invitation"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/invHostsLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/invButtonsLinearLayout"
+        android:layout_alignLeft="@+id/addInvitationBtn"
+        android:layout_alignRight="@+id/addInvitationBtn"
+        android:layout_below="@+id/addInvitationBtn"
+        android:background="#4433B5E5" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/invButtonsLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/clearInvitationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#FF3333"
+            android:onClick="clearBtnClicked"
+            android:text="@string/clear_list"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sendInvitationsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#92CD00"
+            android:onClick="sendBtnClicked"
+            android:text="@string/send_invitations"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
